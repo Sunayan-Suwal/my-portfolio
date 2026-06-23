@@ -11,6 +11,47 @@
     .body{
         color: black;
     }
+
+     .photo {
+    width: 350px;
+    border-radius: 15px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeZoom 2s ease forwards;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+ img{
+    border-radius: 50%;
+    border: 6px solid #38bdf8;
+    box-shadow: 0 0 20px #38bdf8;
+    animation-name: float;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+ }
+
+ @keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+
+    }
+100%{
+    transform: translateY(0px);
+} }
+  @keyframes fadeZoom {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
     *{
     margin:0;
     padding:0;
@@ -20,7 +61,7 @@
 
 body{
     font-family:'Segoe UI',sans-serif;
-    background:#33518f;
+;
     color:#333;
 }
 
@@ -118,6 +159,7 @@ nav ul li a:hover{
 
 .section{
     padding:100px 10%;
+    
 }
 
 .section h2{
@@ -224,7 +266,6 @@ footer{
         font-size:32px;
     }
 }
-    
 </style>
 
     </head>
@@ -248,6 +289,8 @@ footer{
 
         <div class="hero-content">
             <h1>Hello, I'm <span>Sunayan Suwal</span></h1>
+
+            <img src="..//images/WhatsApp Image 2026-06-08 at 15.03.49.jpeg" width="150px">
 
             <h2><span id="typing"></span></h2>
 
@@ -280,6 +323,7 @@ footer{
             </p>
         </div>
     </section>
+>
 
     <!-- Education -->
     <section id="education" class="section reveal">
@@ -347,7 +391,7 @@ footer{
 
         <div class="card">
 
-            <p><i class="fas fa-map-marker-alt"></i> Chochhen,Dekocha, Bhaktapur, Nepal</p>
+            <p><i class="fas fa-map-marker-alt"></i> Chochhen, Bhaktapur, Nepal</p>
 
             <p><i class="fas fa-envelope"></i> sunayansuwal7@example.com</p>
 
@@ -356,7 +400,8 @@ footer{
         </div>
 
     </section>
-
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1782219891572!6m8!1m7!1scHDGAI9rzh6Iy5HuYZwC1A!2m2!1d27.67622293095844!2d85.4322928378438!3f342.2323455543624!4f3.46489843508715!5f1.7778776470797029" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <!-- Footer -->
     <footer>
         <p>© 2026 Sunayan Suwal | Student Portfolio</p>
@@ -372,8 +417,9 @@ const words = [
     "Student",
     "Future IT Professional",
     "Web Development Learner",
-    "Creative Thinker"
+    "Creative Thinker",
 ];
+
 
 let wordIndex = 0;
 let charIndex = 0;
